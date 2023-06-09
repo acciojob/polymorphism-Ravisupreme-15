@@ -3,18 +3,18 @@ package com.driver;
 public class Main {
 
 
-    static class Product{
+    public static class Product{
 
 
-        public int product(int a, int b){
+        public int product(int x, int y){
 
-            return a*b;
+            return x*y;
 
         }
 
-        public int product(int a, int b, int c){
+        public int product(int x, int y, int z){
 
-            return a*b*c;
+            return x*y*z;
         }
 
 
@@ -34,13 +34,18 @@ public class Main {
 
 
         // int a , int b
-        System.out.println( "product of 5 and 6 is "+product.product(5,6));
+
+        int res1 = product.product(5,6);
+        System.out.println( "product of 5 and 6 is "+res1);
 
         // int a, int b, int c
-        System.out.println("product of 9,8 and 8 is "+ product.product(9,8,7));
+        int res2 = product.product(9,8,7);
+        System.out.println("product of 9,8 and 8 is "+ res2);
 
         // double a, double b
-        System.out.println("product of 100.00 and 399.00 is "+ product.product(100.00,399.00));
+
+        double res3 = product.product(100.00,399.00);
+        System.out.println("product of 100.00 and 399.00 is "+ res3);
 
 
 
